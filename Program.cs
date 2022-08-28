@@ -1,1 +1,20 @@
-﻿Console.WriteLine("Hello, World!");
+﻿// Задача 19 Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
+
+bool Razvorot(string dannye)                                      // метод сравнения чисел
+{
+    int len = dannye.Length;                                      // находим длину
+    for (int i = 1, j = len - 1; i < j; i++, j--)                 // запускаем цикл при котором есть 2 переменные i и j  для сравнения слов одно сначала другое с конца
+        if (dannye[i] != dannye[j]) return false;                 // если не равно то false 
+        return true;                                              // если равно то true 
+}
+
+Console.WriteLine("Введите число");                               // собственно начало программы предлагаем ввести число
+string word = Convert.ToString(Console.ReadLine());               // переводим данные в строку для удобства дальнейших иттераций (i=0 и т.д.....) в рамках метода     
+if (Razvorot (word))                                              // dspsdftv метод обернув в условие iF  
+{
+    Console.WriteLine("не полиндром");                            // если False то не полиндром
+}
+else                                                              // иначе
+{ 
+    Console.WriteLine("Полиндром");                               // если True то полиндром
+}
