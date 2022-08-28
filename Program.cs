@@ -10,7 +10,7 @@ bool Razvorot(string dannye)                                      // метод 
 
 Console.WriteLine("Введите число");                               // собственно начало программы предлагаем ввести число
 string word = Convert.ToString(Console.ReadLine());               // переводим данные в строку для удобства дальнейших иттераций (i=0 и т.д.....) в рамках метода     
-if (Razvorot (word))                                              // dspsdftv метод обернув в условие iF  
+if (Razvorot (word))                                              // вызываем метод обернув в условие iF  
 {
     Console.WriteLine("не полиндром");                            // если False то не полиндром
 }
